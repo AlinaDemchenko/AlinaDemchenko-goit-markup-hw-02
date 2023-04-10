@@ -117,3 +117,7 @@ body {
 footer > .logo {
   color: var(--light-mode-color);
 }
+
+footer > p {
+  color: var(--light-mode-color);
+}
