@@ -1,0 +1,119 @@
+:root {
+  --primary-brand-color: #4d5ae5;
+  --pressed-state-color: #404bbf;
+  --headings-color: #2e2f42;
+  --text-color: #434455;
+  --primary-white-color: #ffffff;
+  --light-mode-color: #f4f4fd;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  background-color: var(--primary-white-color);
+}
+
+/* ============LOGO============= */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--headings-color);
+}
+
+.logo-accent {
+  color: var(--primary-brand-color);
+}
+
+/* ======= HEADER ========== */
+
+.menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--headings-color);
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
+  color: var(--pressed-state-color);
+}
+
+.contacts-link {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.contacts-link:hover,
+.contacts-link:focus,
+.contacts-link:active {
+  color: var(--pressed-state-color);
+}
+
+/* ==========SECTION============ */
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--headings-color);
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--headings-color);
+}
+
+/* ======HERO========== */
+
+.modal-button {
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  color: var(--primary-white-color);
+  background-color: var(--primary-brand-color);
+}
+
+.modal-button:hover,
+.modal-button:focus,
+.modal-button:active {
+  background: var(--pressed-state-color);
+}
+
+/* убрать фон */
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  color: var(--primary-white-color);
+  background-color: #2e2f42;
+}
+
+/* =======FOOTER======== */
+
+footer > .logo {
+  color: var(--light-mode-color);
+}
