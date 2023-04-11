@@ -16,41 +16,32 @@ body {
   background-color: var(--primary-white-color);
 }
 
-a {
-  text-decoration: none;
-  font-style: normal;
-}
-
-button {
-  font-family: inherit;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-}
+/* =========HEADER=========== */
 
 .list {
   list-style: none;
 }
-
-/* ============LOGO============= */
+.adress {
+  font-style: normal;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--headings-color);
-}
-
-.logo-accent {
   color: var(--primary-brand-color);
 }
 
-/* ======= LINKS ========== */
+.logo-accent {
+  color: var(--headings-color);
+}
+
+.link {
+  text-decoration: none;
+}
 
 .menu-link {
   font-weight: 500;
@@ -75,11 +66,48 @@ button {
   color: var(--pressed-state-color);
 }
 
-/* ==========SECTION============ */
+/* ======HERO========== */
+
+.button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-white-color);
+}
+
+.hero {
+  background-color: var(--headings-color);
+}
+
+.modal-button {
+  color: var(--primary-white-color);
+  background-color: var(--primary-brand-color);
+}
+
+.modal-button:hover,
+.modal-button:focus,
+.modal-button:active {
+  background: var(--pressed-state-color);
+}
+/* =============FEATURES============= */
 
 .section-title {
   font-size: 36px;
   line-height: 1.11;
+  letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
   color: var(--headings-color);
@@ -89,10 +117,24 @@ button {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--headings-color);
 }
 
-/* ========buttons========= */
+.item-description {
+  font-size: 16px;
+}
+
+/* ==============TEAM============= */
+.team {
+  background-color: var(--light-mode-color);
+}
+
+.team-list-item {
+  background: var(--primary-white-color);
+}
+
+/* ==============PORTFOLIO============ */
 
 .filter-button {
   color: var(--primary-brand-color);
@@ -106,38 +148,16 @@ button {
   background: var(--pressed-state-color);
 }
 
-.modal-button {
-  color: var(--primary-white-color);
-  background-color: var(--primary-brand-color);
-}
-
-.modal-button:hover,
-.modal-button:focus,
-.modal-button:active {
-  background: var(--pressed-state-color);
-}
-
-/* ======HERO========== */
-
-/* убрать фон */
-.hero-title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  color: var(--primary-white-color);
-  background-color: #2e2f42;
-}
-
-/* ==============PORTFOLIO============ */
-
 .portfolio-item-description {
   color: var(--text-color);
 }
 
 /* =======FOOTER======== */
+.footer {
+  background-color: var(--headings-color);
+}
 
-.footer > .logo {
+.footer .logo-accent {
   color: var(--light-mode-color);
 }
 
