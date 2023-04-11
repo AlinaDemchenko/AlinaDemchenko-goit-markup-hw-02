@@ -7,15 +7,6 @@
   --light-mode-color: #f4f4fd;
 }
 
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-  font-style: normal;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -23,6 +14,24 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
   background-color: var(--primary-white-color);
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+button {
+  font-family: inherit;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
 }
 
 /* ============LOGO============= */
@@ -41,7 +50,7 @@ body {
   color: var(--primary-brand-color);
 }
 
-/* ======= HEADER ========== */
+/* ======= LINKS ========== */
 
 .menu-link {
   font-weight: 500;
@@ -83,15 +92,21 @@ body {
   color: var(--headings-color);
 }
 
-/* ======HERO========== */
+/* ========buttons========= */
+
+.filter-button {
+  color: var(--primary-brand-color);
+  background-color: var(--light-mode-color);
+}
+
+.filter-button:hover,
+.filter-button:focus,
+.filter-button:active {
+  color: var(--primary-white-color);
+  background: var(--pressed-state-color);
+}
 
 .modal-button {
-  font-weight: 500;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.04em;
-  cursor: pointer;
   color: var(--primary-white-color);
   background-color: var(--primary-brand-color);
 }
@@ -101,6 +116,8 @@ body {
 .modal-button:active {
   background: var(--pressed-state-color);
 }
+
+/* ======HERO========== */
 
 /* убрать фон */
 .hero-title {
@@ -112,12 +129,18 @@ body {
   background-color: #2e2f42;
 }
 
+/* ==============PORTFOLIO============ */
+
+.portfolio-item-description {
+  color: var(--text-color);
+}
+
 /* =======FOOTER======== */
 
-footer > .logo {
+.footer > .logo {
   color: var(--light-mode-color);
 }
 
-footer > p {
+.footer > p {
   color: var(--light-mode-color);
 }
